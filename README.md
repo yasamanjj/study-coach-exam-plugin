@@ -4,118 +4,97 @@ A custom WordPress online examination management plugin designed for educational
 
 ## Overview
 
-Study Coach Exam Plugin (WCE) is a custom-built WordPress examination management system that provides tools for creating question banks, designing online exams, managing candidates' attempts, automatically grading multiple-choice questions, manually grading descriptive questions, and reviewing examination results.
+Study Coach Exam Plugin (WCE) is a custom-built WordPress examination management system for creating and managing online exams.
 
-The plugin also includes configurable exam timing, randomized question selection, answer-sheet management, CSV question import/export functionality, printable answer sheets, and examination event logging.
+The plugin provides tools for question bank management, online examinations, automated grading, descriptive-question grading, result management, configurable exam settings, and examination event logging.
 
 ## Features
 
 ### Question Management
 
-- Create and manage question banks
+- Question bank management
 - Multiple-choice questions
 - Descriptive questions
 - Question editing and deletion
 - CSV question import
-- Sample CSV template generation
+- Sample CSV template
 
 ### Exam Management
 
-- Create and edit online exams
-- Select a question bank for each exam
+- Create and manage exams
 - Configurable exam duration
 - Configurable passing percentage
-- Random selection of multiple-choice questions
-- Random selection of descriptive questions
-- Start and end date/time
+- Random question selection
+- Multiple-choice question count
+- Descriptive question count
+- Exam start and end time
 - Active/inactive exam status
-- Configurable unanswered-question policy
+- Unanswered-question configuration
 
 ### Examination System
 
 - Dedicated exam URLs
 - Countdown timer
-- Online answer saving
-- Multiple-choice answer handling
-- Descriptive answer handling
-- Automatic exam submission when the timer expires
-- Examination answer sheet
+- AJAX-based answer saving
+- Multiple-choice answers
+- Descriptive answers
+- Automatic submission
+- Candidate answer sheets
 
 ### Grading & Results
 
-- Automatic multiple-choice grading
-- Descriptive-question manual grading
+- Automatic grading for multiple-choice questions
+- Manual grading for descriptive questions
 - Final score calculation
 - Correct / incorrect / unanswered statistics
-- Detailed candidate answer sheets
-- Bulk result management
+- Detailed examination results
 - CSV result export
 - Printable answer sheets
-- PDF-ready print output
 
 ### Monitoring & Security
 
 - WordPress nonce verification
 - Administrator capability checks
 - Input sanitization
-- Secure database queries using WordPress database APIs
+- Prepared database queries
 - Examination event logging
-- Browser tab visibility monitoring during exams
+- Browser tab visibility monitoring
 
 ## Database Architecture
 
-The plugin creates dedicated database tables for:
+The plugin uses dedicated database tables for:
 
-| Table | Purpose |
-|---|---|
-| `wce_question_banks` | Question bank management |
-| `wce_questions` | Question storage |
-| `wce_exams` | Exam configuration |
-| `wce_attempts` | Candidate examination attempts |
-| `wce_answers` | Candidate answers |
-| `wce_logs` | Examination event logs |
+- Question banks
+- Questions
+- Exams
+- Examination attempts
+- Candidate answers
+- Examination logs
 
 ## Admin Dashboard
 
-The WordPress administration panel provides dedicated sections for:
+The plugin provides dedicated administration sections for:
 
-- Dashboard & Guide
+- Dashboard
 - Question Banks
 - Questions
 - Exams
 - Results & Grading
 
-## Installation
-
-1. Download the plugin.
-2. Upload the plugin file to:
-
-   `wp-content/plugins/`
-
-3. Go to:
-
-   `WordPress Dashboard → Plugins`
-
-4. Activate **Study Coach Exam Plugin (WCE)**.
-
-5. The plugin automatically initializes the required database tables.
-
-## Creating an Exam
-
-The general workflow is:
+## Examination Workflow
 
 ```text
 Create Question Bank
         ↓
-Add / Import Questions
+Add Questions
         ↓
 Create Exam
         ↓
-Configure Exam Settings
+Configure Exam
         ↓
 Publish Exam
         ↓
-Candidates Take Exam
+Candidate Takes Exam
         ↓
 Automatic / Manual Grading
         ↓
