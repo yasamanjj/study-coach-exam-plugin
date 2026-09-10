@@ -99,3 +99,59 @@ Candidate Takes Exam
 Automatic / Manual Grading
         ↓
 Review Results
+## Installation
+
+1. Download the plugin.
+2. Upload the plugin file to:
+
+   `wp-content/plugins/`
+
+3. Open the WordPress administration panel.
+4. Go to:
+
+   `Plugins → Installed Plugins`
+
+5. Activate **Study Coach Exam Plugin (WCE)**.
+6. Configure question banks and exams from the WordPress administration dashboard.
+
+## Technology Stack
+
+- PHP
+- WordPress
+- MySQL
+- JavaScript
+- HTML5
+- CSS3
+- WordPress AJAX API
+- WordPress Database API
+
+## Security
+
+The plugin implements WordPress security mechanisms including:
+
+- Nonce verification
+- Administrator capability checks
+- Input sanitization
+- Prepared database queries
+- Examination event logging
+- Browser tab visibility monitoring
+
+## Project Status
+
+**Version:** 2.1.0
+
+**Status:** Active Development
+
+## Copyright
+
+Copyright © 2026 Study Coach.
+
+This repository is published for portfolio and demonstration purposes.
+
+The source code is not released under an open-source license.
+
+Unauthorized redistribution, modification, or commercial use is not permitted.
+
+## Author
+
+Study Coach
