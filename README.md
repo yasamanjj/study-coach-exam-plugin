@@ -80,7 +80,25 @@ The plugin provides dedicated administration sections for:
 - Questions
 - Exams
 - Results & Grading
+## Screenshots
 
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+### Question Banks
+![Question Banks](screenshots/question-banks.png)
+
+### Questions
+![Questions](screenshots/questions.png)
+
+### Exams
+![Exams](screenshots/exams.png)
+
+### Results & Grading
+![Results](screenshots/results.png)
+
+### CSV Import
+![CSV Import](screenshots/csv-import.png)
 ## Examination Workflow
 
 ```text
