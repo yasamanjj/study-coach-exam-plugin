@@ -1768,23 +1768,6 @@ add_action('wp_ajax_wce_save_answer', 'wce_save_answer_ajax');
 function wce_save_answer_ajax() {
     check_ajax_referer('wce_exam_nonce', 'security');
     $attempt_id = intval($_POST['attempt_id']);
-    if (!$attempt_id || !is_user_logged_in()) {
-    wp_send_json_error();
-}
-
-global $wpdb;
-
-$attempt = $wpdb->get_row(
-    $wpdb->prepare(
-        "SELECT id FROM {$wpdb->prefix}" . WCE_TABLE_ATTEMPTS . " WHERE id = %d AND user_id = %d",
-        $attempt_id,
-        get_current_user_id()
-    )
-);
-
-if (!$attempt) {
-    wp_send_json_error();
-}
     $question_id = intval($_POST['question_id']);
     $answer_data = sanitize_textarea_field($_POST['answer_data']);
 
