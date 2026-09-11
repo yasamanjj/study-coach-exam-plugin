@@ -100,7 +100,37 @@ The plugin provides dedicated administration sections for:
 ### CSV Import
 ![CSV Import](screenshots/csv-import.png)
 ## Examination Workflow
+## Usage
 
+After activating the plugin, the **WCE – Study Coach Exam** menu becomes available in the WordPress administration dashboard.
+
+The typical workflow is:
+
+1. Create a question bank.
+2. Add multiple-choice or descriptive questions.
+3. Create an examination.
+4. Configure exam settings such as duration, passing percentage, and question counts.
+5. Publish the examination.
+6. Candidates access the dedicated exam URL.
+7. Answers are saved during the examination.
+8. Multiple-choice questions are graded automatically.
+9. Descriptive questions can be graded manually.
+10. Review and export examination results.
+## Technical Highlights
+
+- Custom WordPress administration interface
+- Custom database tables
+- WordPress AJAX integration
+- Automated examination grading
+- Manual descriptive-question grading
+- CSV question import
+- CSV result export
+- Exam countdown and automatic submission
+- Nonce-based request verification
+- Capability-based access control
+- Prepared database queries
+- Examination event logging
+- Browser visibility monitoring
 ```text
 Create Question Bank
         ↓
